@@ -1,0 +1,141 @@
+html {
+    background-color: #320607;
+    width: 100vw;
+    height: 100vh;
+}
+
+#merge {
+    display: flex;
+}
+
+.group {
+    width: 179px;
+}
+
+.placeholder {
+    width: 30px;
+    height: 50px;
+}
+
+.ferrari2013 {
+    position: absolute;
+    width: 579px;
+    height: 572px;
+    left: 0;
+    top: 254px;
+
+}
+.ferrari2013a{
+    position: absolute;
+    width: 100%;
+    height:900px;
+    left: 0;
+    top: 140px;
+
+    background: url(./images/2013Ferrari.png);
+   background-size:cover;
+}
+#menu {
+    display: flex;
+    position: fixed;
+    top: 20px;
+    right: 100px;
+}
+
+#menu img {
+    margin: 20px;
+    width: 120px;
+    height:42px;
+}
+
+.logo {
+    display: none;
+    position: absolute;
+    width: 579px;
+    height: 572px;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+}
+p.title1{
+    position:fixed;
+    top:70px;
+    text-align:center;
+    z-index:2000;
+    width:100%;
+    color:white;
+    font-size:2em;
+}
+p.down{
+    position:fixed;
+    top:80vh;
+    left:10vw;
+    text-align:center;
+    z-index:2000;
+    width:80%;
+    color:white;
+    font-size:1em;
+   
+}
+p.made{
+    position: relative;
+    width: 579px;
+    height: 572px;
+    color:rgb(255, 255, 255);
+    top:110px;
+    font-size:2em;
+}
+p.explain{
+    position: relative;
+    width: 579px;
+    height: 572px;
+    color:white;
+    top:30px;
+    font-size:1em; 
+}
+form{
+    
+    position:fixed;
+    left:1300px;
+    bottom:380px;
+
+}
+input{
+    width:25vw;
+    height:50px;
+    background-color:#b42222;
+    color:white;
+    padding:5px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+input[type="submit"]{
+    width:26vw;
+    height:69px;
+    padding:5px;
+    background-color:#b42222;
+    color:white;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+.main_text{
+    color:white;
+    width:800px;
+    position: relative;
+    left:600px;
+    top:148px;
+    font-size:2em;
+}
+@media (max-width:1024px) {form{
+    
+    position:fixed;
+    left:200px;
+    bottom:180px;
+
+}
+}
+@media (max-width:414px){
+
+}
+
