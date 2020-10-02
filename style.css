@@ -34,12 +34,13 @@ html {
 
     background: url(./images/2013Ferrari.png);
    background-size:cover;
+   animation-direction: reverse;
 }
 #menu {
     display: flex;
     position: fixed;
     top: 20px;
-    right: 100px;
+    right: 200px;
 }
 
 #menu img {
@@ -60,7 +61,7 @@ html {
 }
 p.title1{
     position:fixed;
-    top:70px;
+    top:65px;
     text-align:center;
     z-index:2000;
     width:100%;
@@ -69,13 +70,13 @@ p.title1{
 }
 p.down{
     position:fixed;
-    top:80vh;
+    top:70vh;
     left:10vw;
     text-align:center;
     z-index:2000;
     width:80%;
     color:white;
-    font-size:1em;
+    font-size:2em;
    
 }
 p.made{
@@ -95,12 +96,14 @@ p.explain{
     font-size:1em; 
 }
 form{
-    
+    color:white;
     position:fixed;
     left:1300px;
     bottom:380px;
 
 }
+::placeholder{
+color:white;}
 input{
     width:25vw;
     height:50px;
@@ -127,6 +130,46 @@ input[type="submit"]{
     top:148px;
     font-size:2em;
 }
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: rgb(180, 178, 178);
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+.nav #menu {
+    display: none;
+}
+
+.nav a {
+    float: left;
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a.icon {
+    float: right;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: rgb(153, 151, 151);
+    color: white;
+}
 @media (max-width:1024px) {form{
     
     position:fixed;
@@ -134,8 +177,16 @@ input[type="submit"]{
     bottom:180px;
 
 }
+p.down{
+    top: 50vh;
+}
 }
 @media (max-width:414px){
-
+#menu{
+    position:fixed;
+    right:10px !important;
+}
+#menu img{
+margin:0;}
 }
 
